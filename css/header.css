@@ -1,0 +1,96 @@
+@import url(styles.css);
+nav {
+    background-color: var(--color-r-purple);
+    padding: 10px 20px;
+}
+
+.nav-item>a {
+    text-decoration: none;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.nav-item>a {
+    color: var(--color-whitel);
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+}
+
+.nav-item>a:hover {
+    cursor: pointer;
+    color: var(--c-nav);
+    -webkit-animation: neon1 1s ease-in-out infinite alternate;
+    -moz-animation: neon1 1s ease-in-out infinite alternate;
+    animation: neon1 1s ease-in-out infinite alternate;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* nav a  */
+
+.menu>li>a>h1 {
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    font-size: 20px;
+    padding: 20px 5px;
+    text-align: center;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+}
+
+.menu .nav-item {
+    font-size: 16px;
+    padding: 15px 5px;
+}
+
+.menu .nav-item a {
+    display: block;
+}
+
+
+/* logo / retro box shadow/ retro hover */
+
+.retroshadow {
+    color: #2c2c2c;
+    background-color: var(--color-r-purple);
+    letter-spacing: 0.05em;
+    text-shadow: 1px 1px 0px var(--color-r-purple), 2px 2px 0px rgba(0, 0, 0, 0.5);
+}
+
+.retroshadow:hover {
+    -webkit-animation: neon6 1s ease-in-out infinite alternate;
+    -moz-animation: neon6 1s ease-in-out infinite alternate;
+    animation: neon6 1s ease-in-out infinite alternate;
+}
+
+.menu .logo {
+    font-size: 20px;
+}
+
+
+/* neon animation */
+
+@-webkit-keyframes neon1 {
+    from {
+        text-shadow: 0 0 10px var(--color-whitel), 0 0 20px var(--color-whitel), 0 0 30px var(--color-whitel), 0 0 40px var(--c-nav), 0 0 70px var(--c-nav), 0 0 80px var(--c-nav), 0 0 100px var(--c-nav), 0 0 150px var(--c-nav);
+    }
+    to {
+        text-shadow: 0 0 5px var(--color-whitel), 0 0 10px var(--color-whitel), 0 0 15px var(--color-whitel), 0 0 20px var(--c-nav), 0 0 35px var(--c-nav), 0 0 40px var(--c-nav), 0 0 50px var(--c-nav), 0 0 75px var(--c-nav);
+    }
+}
+
+@keyframes neon6 {
+    from {
+        text-shadow: 0 0 10px var(--color-whitel), 0 0 20px var(--color-whitel), 0 0 30px var(--color-whitel), 0 0 40px var(--c-logo), 0 0 70px var(--c-logo), 0 0 80px var(--c-logo), 0 0 100px var(--c-logo), 0 0 150px var(--c-logo);
+    }
+    to {
+        text-shadow: 0 0 5px var(--color-whitel), 0 0 10px var(--color-whitel), 0 0 15px var(--color-whitel), 0 0 20px var(--c-logo), 0 0 35px var(--c-logo), 0 0 40px var(--c-logo), 0 0 50px var(--c-logo), 0 0 75px var(--c-logo);
+    }
+}
